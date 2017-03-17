@@ -1,0 +1,35 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+        span: left
+
+    packaging:
+        label: Packaging
+        type: relation
+        nameFrom: packaging_name
+
+    size:
+        label: Size
+        type: relation
+        nameFrom: size_name
+
+    # qty:
+    #     label: Quantity
+    #     type: number
+    #     span: left
+
+    price:
+        label: Price
+        type: text
+        span: left
+
+    unit:
+        label: Unit
+        type: relation
+        nameFrom: unit_name
+        default: egység

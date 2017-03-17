@@ -1,0 +1,12 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    size_name:
+        label: méret
+        sortable: true

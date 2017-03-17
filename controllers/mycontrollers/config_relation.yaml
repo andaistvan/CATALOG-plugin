@@ -1,0 +1,18 @@
+Sizes:
+    label: Size
+    view:
+        list: $/arteriaweb/catalog/models/size/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/arteriaweb/catalog/models/size/fields.yaml
+        list: $/arteriaweb/catalog/models/size/columns.yaml
+
+
+items:
+    label: Item
+    view:
+        list: $/arteriaweb/catalog/models/item/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/arteriaweb/catalog/models/item/fields.yaml
+        list: $/arteriaweb/catalog/models/item/columns.yaml

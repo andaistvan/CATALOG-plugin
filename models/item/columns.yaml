@@ -1,0 +1,32 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+
+    packaging:
+        label: Packaging
+        relation: packaging
+        select: packaging_name
+
+    size:
+        label: Size
+        relation: size
+        select: size_name
+
+    # qty:
+    #     label: Quantity
+    #     type: number
+
+    price:
+        label: Price
+        type: text
+
+    unit:
+        label: Unit
+        relation: unit
+        select: unit_name
+        default: egység

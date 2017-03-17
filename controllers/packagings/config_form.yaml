@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Packaging
+
+# Model Form Field configuration
+form: $/arteriaweb/catalog/models/packaging/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Catalog\Models\Packaging
+
+# Default redirect location
+defaultRedirect: arteriaweb/catalog/packagings
+
+# Create page
+create:
+    title: Create Packaging
+    redirect: arteriaweb/catalog/packagings/update/:id
+    redirectClose: arteriaweb/catalog/packagings
+
+# Update page
+update:
+    title: Edit Packaging
+    redirect: arteriaweb/catalog/packagings
+    redirectClose: arteriaweb/catalog/packagings
+
+# Preview page
+preview:
+    title: Preview Packaging

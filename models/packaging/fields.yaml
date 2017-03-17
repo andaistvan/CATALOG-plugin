@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    packaging_name:
+        label: kiszerelés
+        span: left
+        preset:
+            field: packaging_name
+            type: slug

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: mycontrollerss
+
+# Model Form Field configuration
+form: $/arteriaweb/catalog/models/product/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Catalog\Models\Product
+
+# Default redirect location
+defaultRedirect: arteriaweb/catalog/mycontrollers
+
+# Create page
+create:
+    title: Create mycontrollers
+    redirect: arteriaweb/catalog/mycontrollers/update/:id
+    redirectClose: arteriaweb/catalog/mycontrollers
+
+# Update page
+update:
+    title: Edit mycontrollers
+    redirect: arteriaweb/catalog/mycontrollers
+    redirectClose: arteriaweb/catalog/mycontrollers
+
+# Preview page
+preview:
+    title: Preview mycontrollers

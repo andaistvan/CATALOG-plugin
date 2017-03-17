@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    id:
+        label: ID
+        disabled: true
+
+    unit_name:
+        label: egység
+        span: left
+        preset:
+            field: unit_name
+            type: slug

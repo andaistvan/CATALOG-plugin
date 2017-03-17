@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Maincontroller
+
+# Model Form Field configuration
+form: $/arteriaweb/catalog/models/product/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Catalog\Models\Product
+
+# Default redirect location
+defaultRedirect: arteriaweb/catalog/maincontrollers
+
+# Create page
+create:
+    title: Create Maincontroller
+    redirect: arteriaweb/catalog/maincontrollers/update/:id
+    redirectClose: arteriaweb/catalog/maincontrollers
+
+# Update page
+update:
+    title: Edit Maincontroller
+    redirect: arteriaweb/catalog/maincontrollers
+    redirectClose: arteriaweb/catalog/maincontrollers
+
+# Preview page
+preview:
+    title: Preview Maincontroller
