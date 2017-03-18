@@ -25,7 +25,7 @@ fields:
         type: textarea
         size: large
         span: left
-        
+
     # slug:
     #     disabled: true
     #     label: Slug
@@ -37,7 +37,6 @@ fields:
 
 tabs:
     fields:
-
         featimage:
             context: [create, update, relationcontroller]
             tab: Kép
@@ -62,3 +61,26 @@ tabs:
             thumbOptions:
                 mode: crop
                 extension: auto
+
+        Packagings:
+            context: [create, update, relationcontroller]
+            tab: Kiszerelés
+            label: Kiszerelés
+            type: partial
+            path: field_packaging
+            span: auto
+
+        Sizes:
+            context: [create, update, relationcontroller]
+            tab: Méretek
+            label: Méretek
+            type: partial
+            path: field_size
+            span: auto
+
+        Units:
+            context: [create, update, relationcontroller]
+            tab: Egység
+            type: partial
+            path: field_unit
+            span: auto
