@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Unit
+
+# Model Form Field configuration
+form: $/arteriaweb/catalog/models/unit/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Catalog\Models\Unit
+
+# Default redirect location
+defaultRedirect: arteriaweb/catalog/units
+
+# Create page
+create:
+    title: Create Unit
+    redirect: arteriaweb/catalog/units/update/:id
+    redirectClose: arteriaweb/catalog/units
+
+# Update page
+update:
+    title: Edit Unit
+    redirect: arteriaweb/catalog/units
+    redirectClose: arteriaweb/catalog/units
+
+# Preview page
+preview:
+    title: Preview Unit

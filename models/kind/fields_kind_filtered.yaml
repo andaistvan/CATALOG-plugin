@@ -1,0 +1,19 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    # id:
+    #     label: ID
+    #     disabled: true
+
+    kind_name:
+        label: Kategória
+        span: left
+
+    # slug:
+    #     label: Slug
+    #     preset:
+    #         field: kind_name
+    #         type: slug
+    #     span: right

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Size
+
+# Model Form Field configuration
+form: $/arteriaweb/catalog/models/size/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Catalog\Models\Size
+
+# Default redirect location
+defaultRedirect: arteriaweb/catalog/sizes
+
+# Create page
+create:
+    title: Create Size
+    redirect: arteriaweb/catalog/sizes/update/:id
+    redirectClose: arteriaweb/catalog/sizes
+
+# Update page
+update:
+    title: Edit Size
+    redirect: arteriaweb/catalog/sizes
+    redirectClose: arteriaweb/catalog/sizes
+
+# Preview page
+preview:
+    title: Preview Size

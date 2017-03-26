@@ -11,11 +11,20 @@ class CreateTables extends Migration
         Schema::create('arteriaweb_catalog_products', function($table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
+            $table->integer('kind_id')->unsigned();
             $table->string('name');
             $table->text('description');
             $table->string('slug');
             $table->timestamps();
-            $table->integer('type_id')->unsigned()->nullable()->default(null);
+        });
+
+        // types ------------------------
+        Schema::create('arteriaweb_catalog_kinds', function($table) {
+            $table->engine = 'InnoDB';
+            $table->increments('id');
+            $table->string('kind_name');
+            $table->string('slug');
+            $table->timestamps();
         });
 
         // items ------------------------
@@ -30,15 +39,6 @@ class CreateTables extends Migration
             $table->integer('size_id')->unsigned()->nullable()->default(null);
             $table->integer('packaging_id')->unsigned()->nullable()->default(null);
             $table->integer('unit_id')->unsigned()->nullable()->default(null);
-        });
-
-        // types ------------------------
-        Schema::create('arteriaweb_catalog_types', function($table) {
-            $table->engine = 'InnoDB';
-            $table->increments('id');
-            // $table->integer('product_id')->unsigned()->nullable()->default(null);
-            $table->string('slug');
-            $table->timestamps();
         });
 
         // sizes ------------------------
@@ -72,8 +72,8 @@ class CreateTables extends Migration
     public function down()
     {
         Schema::dropIfExists('arteriaweb_catalog_products');
+        Schema::dropIfExists('arteriaweb_catalog_kinds');        
         Schema::dropIfExists('arteriaweb_catalog_items');
-        Schema::dropIfExists('arteriaweb_catalog_types');
         Schema::dropIfExists('arteriaweb_catalog_sizes');
         Schema::dropIfExists('arteriaweb_catalog_packagings');
         Schema::dropIfExists('arteriaweb_catalog_units');

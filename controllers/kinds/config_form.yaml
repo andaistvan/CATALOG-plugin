@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: kind
+
+# Model Form Field configuration
+form: $/arteriaweb/catalog/models/kind/fields.yaml
+
+# Model Class name
+modelClass: Arteriaweb\Catalog\Models\kind
+
+# Default redirect location
+defaultRedirect: arteriaweb/catalog/kinds
+
+# Create page
+create:
+    title: Create kind
+    redirect: arteriaweb/catalog/kinds/update/:id
+    redirectClose: arteriaweb/catalog/kinds
+
+# Update page
+update:
+    title: Edit kind
+    redirect: arteriaweb/catalog/kinds
+    redirectClose: arteriaweb/catalog/kinds
+
+# Preview page
+preview:
+    title: Preview kind

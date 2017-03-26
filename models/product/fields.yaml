@@ -4,10 +4,22 @@
 
 
 fields:
-    # id:
-    #     label: ID
-    #     disabled: true
-    #     span: left
+    id:
+        label: ID
+        # disabled: true
+        span: left
+
+    kind:
+        label: Kind
+        type: relation
+        nameFrom: kind_name
+        span: left
+
+    # kind:
+    #     label: Kinds
+    #     type: partial
+    #     path: field_kind
+    #     span: right
 
     name:
         label: Name
@@ -26,19 +38,10 @@ fields:
         size: large
         span: left
 
-    # slug:
-    #     disabled: true
-    #     label: Slug
-    #     span: left
-    #     type: text
-    #     preset:
-    #         field: name
-    #         type: slug
-
 tabs:
     fields:
         featimage:
-            context: [create, update, relationcontroller]
+            context: [create, update]
             tab: Kép
             label: Main Image
             type: fileupload
@@ -51,8 +54,9 @@ tabs:
                 extension: auto
 
         imagegallery:
-            context: [create, update, relationcontroller]
+            context: [create, update]
             tab: Galéria
+            label: Galéria
             type: fileupload
             mode: image
             span: auto
@@ -61,26 +65,3 @@ tabs:
             thumbOptions:
                 mode: crop
                 extension: auto
-
-        Packagings:
-            context: [create, update, relationcontroller]
-            tab: Kiszerelés
-            label: Kiszerelés
-            type: partial
-            path: field_packaging
-            span: auto
-
-        Sizes:
-            context: [create, update, relationcontroller]
-            tab: Méretek
-            label: Méretek
-            type: partial
-            path: field_size
-            span: auto
-
-        Units:
-            context: [create, update, relationcontroller]
-            tab: Egység
-            type: partial
-            path: field_unit
-            span: auto

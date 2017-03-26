@@ -7,42 +7,44 @@
 
 <?php if (!$this->fatalError): ?>
 
-    <div class="layout-row">
-        <?= $this->formRender() ?>
-    </div>
+    <?= Form::open(['class' => 'layout']) ?>
 
-    <div class="form-buttons">
-        <div class="loading-indicator-container">
-            <button
-                type="submit"
-                data-request="onSave"
-                data-request-data="redirect:0"
-                data-hotkey="ctrl+s, cmd+s"
-                data-load-indicator="Saving mycontrollers..."
-                class="btn btn-primary">
-                <u>S</u>ave
-            </button>
-            <button
-                type="button"
-                data-request="onSave"
-                data-request-data="close:1"
-                data-hotkey="ctrl+enter, cmd+enter"
-                data-load-indicator="Saving mycontrollers..."
-                class="btn btn-default">
-                Save and Close
-            </button>
-            <button
-                type="button"
-                class="oc-icon-trash-o btn-icon danger pull-right"
-                data-request="onDelete"
-                data-load-indicator="Deleting mycontrollers..."
-                data-request-confirm="Delete this mycontrollers?">
-            </button>
-            <span class="btn-text">
-                or <a href="<?= Backend::url('arteriaweb/catalog/mycontrollers') ?>">Cancel</a>
-            </span>
+        <div class="form-buttons">
+            <div class="loading-indicator-container">
+                <button
+                    type="submit"
+                    data-request="onSave"
+                    data-request-data="redirect:0"
+                    data-hotkey="ctrl+s, cmd+s"
+                    data-load-indicator="Saving mycontrollers..."
+                    class="btn btn-primary">
+                    <u>S</u>ave
+                </button>
+                <button
+                    type="button"
+                    data-request="onSave"
+                    data-request-data="close:1"
+                    data-hotkey="ctrl+enter, cmd+enter"
+                    data-load-indicator="Saving mycontrollers..."
+                    class="btn btn-default">
+                    Save and Close
+                </button>
+                <button
+                    type="button"
+                    class="oc-icon-trash-o btn-icon danger pull-right"
+                    data-request="onDelete"
+                    data-load-indicator="Deleting mycontrollers..."
+                    data-request-confirm="Delete this mycontrollers?">
+                </button>
+                <span class="btn-text">
+                    or <a href="<?= Backend::url('arteriaweb/catalog/mycontrollers') ?>">Cancel</a>
+                </span>
+            </div>
         </div>
-</div>
+
+        <div class="layout-row">
+            <?= $this->formRender() ?>
+        </div>
 
 
     <?= Form::close() ?>

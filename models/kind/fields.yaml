@@ -7,13 +7,13 @@ fields:
         label: ID
         disabled: true
 
-    unit_name:
-        label: Egység
+    kind_name:
+        label: Kategória
         span: left
 
     slug:
         label: Slug
-        span: right
         preset:
-            field: unit_name
+            field: kind_name
             type: slug
+        span: right

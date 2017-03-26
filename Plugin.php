@@ -94,20 +94,48 @@ class Plugin extends PluginBase
         // return []; // Remove this line to activate
 
         return [
+            // 'catalog' => [
+            //     'label'       => 'Catalog (Alpha)',
+            //     'url'         => Backend::url('arteriaweb/catalog/maincontrollers'),
+            //     'icon'        => 'icon-cog',
+            //     'permissions' => ['arteriaweb.catalog.*'],
+            //     'order'       => 500,
+            // ],
             'catalog' => [
-                'label'       => 'Catalog (Alpha)',
-                'url'         => Backend::url('arteriaweb/catalog/maincontrollers'),
-                'icon'        => 'icon-cog',
-                'permissions' => ['arteriaweb.catalog.*'],
-                'order'       => 500,
-            ],
-            'mycatalog' => [
-                'label'       => 'MyCatalog (Alpha)',
+                'label'       => 'Mycontrollers',
                 'url'         => Backend::url('arteriaweb/catalog/mycontrollers'),
                 'icon'        => 'icon-bug',
-                'permissions' => ['arteriaweb.catalog.*'],
+                // 'permissions' => ['arteriaweb.catalog.*'],
                 'order'       => 500,
-            ],
+
+                'sideMenu' => [
+                    'mycontrollers'=> [
+                        'label'       => 'Mycontrollers',
+                        'url'         => Backend::url('arteriaweb/catalog/mycontrollers'),
+                        'icon'        => 'icon-bug',
+                    ],
+                    'kinds'=> [
+                        'label'       => 'Kinds',
+                        'url'         => Backend::url('arteriaweb/catalog/kinds'),
+                        'icon'        => 'icon-cogs',
+                    ],
+                    'packagings'=> [
+                        'label'       => 'Packagings',
+                        'url'         => Backend::url('arteriaweb/catalog/packagings'),
+                        'icon'        => 'icon-archive',
+                    ],
+                    'sizes'=> [
+                        'label'       => 'Sizes',
+                        'url'         => Backend::url('arteriaweb/catalog/sizes'),
+                        'icon'        => 'icon-signal',
+                    ],
+                    'units'=> [
+                        'label'       => 'Units',
+                        'url'         => Backend::url('arteriaweb/catalog/units'),
+                        'icon'        => 'icon-cubes',
+                    ],
+                ]
+            ]
         ];
     }
 }

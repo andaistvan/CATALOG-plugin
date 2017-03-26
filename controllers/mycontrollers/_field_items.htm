@@ -1,10 +1,33 @@
 <div class="panel" style="background: white; border: 1px solid lightgreen; border-radius: 10px;">
     <div class="row">
+        <div class="col-xs-4">
+            <button
+                type="button"
+                class="btn btn-default"
+                data-control="popup"
+                
+                data-size="small"
+                href="javascript:;"
+                >
+                SIZES
+            </button>
+        </div>
+
+        <div class="col-xs-4">
+
+        </div>
+
+        <div class="col-xs-4">
+
+        </div>
+    </div>
+
+    <div class="separate-line" style="height: 1px; width: 100%; margin: 20px auto; background: gray;"></div>
+
+
+    <div class="row">
         <div class="col-xs-12">
             <?= $this->relationRender('items') ?>
-        </div>
-        <div class="col-xs-12">
-            
         </div>
     </div>
 </div>

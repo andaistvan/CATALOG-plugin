@@ -8,8 +8,12 @@ fields:
         disabled: true
 
     size_name:
-        label: méret
+        label: Méret
         span: left
+
+    slug:
+        label: Slug
+        span: right
         preset:
             field: size_name
             type: slug

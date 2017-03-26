@@ -1,12 +1,12 @@
 <?php namespace Arteriaweb\Catalog\Controllers;
 
-use Flash;
-use Redirect;
+// use Flash;
+// use Redirect;
 use BackendMenu;
 use Backend\Classes\Controller;
-use Arteriaweb\Catalog\Models\Packaging;
-use Arteriaweb\Catalog\Models\Size;
-use Arteriaweb\Catalog\Models\Unit;
+// use Arteriaweb\Catalog\Models\Packaging;
+// use Arteriaweb\Catalog\Models\Size;
+// use Arteriaweb\Catalog\Models\Unit;
 
 /**
  * Mycontroller Back-end Controller

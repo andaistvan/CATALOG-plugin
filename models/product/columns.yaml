@@ -6,7 +6,16 @@ columns:
     id:
         label: ID
         searchable: true
-        readonly: true
+        # readonly: true
+
+    kind:
+        label: Kind
+        type: text
+        relation: kind
+        select: kind_name
+        path: ~/plugins/arteriaweb/catalog/models/product/_kind_column.htm
+        sortable: true
+        searchable: true
 
     name:
         label: name
@@ -16,3 +25,7 @@ columns:
 
     description:
         label: description
+
+    featimage:
+        type: partial
+        path: ~/plugins/arteriaweb/catalog/models/product/_featimage_column.htm
